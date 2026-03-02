@@ -1,0 +1,21 @@
+{
+glyphname = lacute;
+kernLeft = h;
+kernRight = d;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = l;
+},
+{
+pos = (-126,30);
+ref = acutecomb.case;
+}
+);
+width = 230;
+}
+);
+unicode = 314;
+}

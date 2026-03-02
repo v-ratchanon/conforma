@@ -1,0 +1,28 @@
+{
+glyphname = bracketleft;
+kernLeft = bracketleft;
+kernRight = bracketleft;
+layers = (
+{
+background = {
+shapes = (
+{
+pos = (327,0);
+ref = bracketright;
+scale = (-1,1);
+}
+);
+};
+layerId = m01;
+shapes = (
+{
+pos = (327,0);
+ref = bracketright;
+scale = (-1,1);
+}
+);
+width = 327;
+}
+);
+unicode = 91;
+}

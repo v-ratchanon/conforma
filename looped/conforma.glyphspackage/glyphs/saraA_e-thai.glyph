@@ -1,0 +1,23 @@
+{
+color = 3;
+glyphname = "saraAe-thai";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "saraE-thai";
+},
+{
+alignment = -1;
+pos = (272,0);
+ref = "saraE-thai";
+}
+);
+width = 576;
+}
+);
+metricLeft = "saraE-thai";
+metricRight = "saraE-thai";
+unicode = 3649;
+}

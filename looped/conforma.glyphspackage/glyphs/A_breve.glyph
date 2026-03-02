@@ -1,0 +1,19 @@
+{
+export = 0;
+glyphname = Abreve;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = A;
+},
+{
+ref = brevecomb;
+}
+);
+width = 626;
+}
+);
+unicode = 258;
+}

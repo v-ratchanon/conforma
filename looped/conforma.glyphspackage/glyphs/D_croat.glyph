@@ -1,0 +1,16 @@
+{
+export = 0;
+glyphname = Dcroat;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = Eth;
+}
+);
+width = 600;
+}
+);
+unicode = 272;
+}

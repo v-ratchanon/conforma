@@ -1,0 +1,13 @@
+{
+export = 0;
+glyphname = "maitaikhu-thai.small";
+layers = (
+{
+layerId = m01;
+width = 200;
+}
+);
+tags = (
+mark
+);
+}

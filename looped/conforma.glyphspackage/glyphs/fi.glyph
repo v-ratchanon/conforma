@@ -1,0 +1,21 @@
+{
+glyphname = fi;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = f;
+},
+{
+pos = (331,0);
+ref = i;
+}
+);
+width = 553;
+}
+);
+metricLeft = f;
+metricRight = i;
+unicode = 64257;
+}

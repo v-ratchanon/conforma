@@ -1,0 +1,39 @@
+{
+glyphname = dieresiscomb.case;
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (155,670);
+},
+{
+name = top;
+pos = (155,820);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(130,728,l),
+(130,821,l),
+(39,821,l),
+(39,728,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(270,728,l),
+(270,821,l),
+(179,821,l),
+(179,728,l)
+);
+}
+);
+width = 300;
+}
+);
+}

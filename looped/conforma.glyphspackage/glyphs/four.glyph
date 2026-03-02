@@ -1,0 +1,39 @@
+{
+glyphname = four;
+kernLeft = "4";
+kernRight = "4";
+layers = (
+{
+background = {
+shapes = (
+{
+pos = (-66,0);
+ref = H;
+}
+);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(429,0,l),
+(429,670,l),
+(305,670,l),
+(19,225,l),
+(19,155,l),
+(534,155,l),
+(534,232,l),
+(69,232,l),
+(96,203,l),
+(377,644,l),
+(336,652,l),
+(336,0,l)
+);
+}
+);
+width = 545;
+}
+);
+unicode = 52;
+}

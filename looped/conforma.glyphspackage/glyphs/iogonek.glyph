@@ -1,0 +1,25 @@
+{
+glyphname = iogonek;
+kernLeft = h;
+kernRight = u;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = idotless;
+},
+{
+pos = (-44,0);
+ref = dotaccentcomb;
+},
+{
+pos = (-70,0);
+ref = ogonekcomb;
+}
+);
+width = 222;
+}
+);
+unicode = 303;
+}

@@ -1,0 +1,39 @@
+{
+glyphname = "maiChattawa-thai.small";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (-70,822);
+},
+{
+name = top;
+pos = (-69,1065);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-78,885,l),
+(-78,1065,l),
+(-152,1065,l),
+(-152,885,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(-8,947,l),
+(-8,1003,l),
+(-222,1003,l),
+(-222,947,l)
+);
+}
+);
+width = 200;
+}
+);
+}

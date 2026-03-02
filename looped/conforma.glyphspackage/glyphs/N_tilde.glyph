@@ -1,0 +1,19 @@
+{
+export = 0;
+glyphname = Ntilde;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = N;
+},
+{
+ref = tildecomb;
+}
+);
+width = 707;
+}
+);
+unicode = 209;
+}

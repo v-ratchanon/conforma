@@ -1,0 +1,21 @@
+{
+glyphname = colon;
+kernLeft = period;
+kernRight = period;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = period;
+},
+{
+pos = (0,294);
+ref = period;
+}
+);
+width = 252;
+}
+);
+unicode = 58;
+}

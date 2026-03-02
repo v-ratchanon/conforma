@@ -1,0 +1,19 @@
+{
+export = 0;
+glyphname = Atilde;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = A;
+},
+{
+ref = tildecomb;
+}
+);
+width = 626;
+}
+);
+unicode = 195;
+}

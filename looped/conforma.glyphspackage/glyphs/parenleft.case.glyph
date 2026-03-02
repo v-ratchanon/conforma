@@ -1,0 +1,18 @@
+{
+glyphname = parenleft.case;
+kernLeft = parenleft;
+kernRight = parenleft;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (355,50);
+ref = parenright;
+scale = (-1,1);
+}
+);
+width = 355;
+}
+);
+}

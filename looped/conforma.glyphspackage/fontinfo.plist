@@ -1,0 +1,452 @@
+{
+.appVersion = "3436";
+.formatVersion = 3;
+axes = (
+{
+name = Weight;
+tag = wght;
+}
+);
+classes = (
+{
+automatic = 1;
+code = "A Aacute Acircumflex Adieresis Agrave Amacron Aogonek B C Cacute Ccaron Ccedilla D Dcaron E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G H I IJ Iacute Icircumflex Idieresis Igrave Imacron Iogonek J Jacute K L Lacute Lcaron M N Nacute Ncaron O Oacute Ocircumflex Odieresis Ograve Omacron P Q R Racute Rcaron S Sacute Scaron Scedilla T Tcaron Tcedilla U Uacute Ucircumflex Udieresis Ugrave Umacron Uogonek V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
+name = Uppercase;
+}
+);
+customParameters = (
+{
+name = glyphOrder;
+value = (
+);
+},
+{
+name = "Update Features";
+value = 1;
+},
+{
+name = "EditView Line Height";
+value = 1400;
+}
+);
+date = "2024-09-07 11:22:52 +0000";
+familyName = Conforma_260302;
+featurePrefixes = (
+{
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn NLD;
+";
+name = Languagesystems;
+}
+);
+features = (
+{
+automatic = 1;
+code = "feature locl;
+feature case;
+";
+tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_DFLT_1 {
+	@CombiningTopAccents = [acutecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb macroncomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_Other_1 {
+	lookupflag 0;
+	@Markscomb = [dieresiscomb dotaccentcomb acutecomb circumflexcomb caroncomb macroncomb];
+	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case acutecomb.case circumflexcomb.case caroncomb.case macroncomb.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	lookupflag 0;
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+";
+tag = ccmp;
+},
+{
+code = "pos roRua-thai [maiEk-thai nikhahit-thai maiChattawa-thai]' <-99 0 0 0>;
+pos roRua-thai maiTho-thai' <-40 0 0 0>;
+pos roRua-thai saraUu-thai' <40 0 0 0>;
+pos roRua-thai [saraU-thai saraUu-thai] [maiEk-thai maiChattawa-thai]' <-99 0 0 0>;
+pos thoThan-thai maiEk-thai' <-99 0 0 0>;
+pos thoThan-thai.less maiEk-thai' <-66 0 0 0>;
+";
+disabled = 1;
+tag = mark;
+},
+{
+code = "pos saraI-thai [maiEk-thai.small maiChattawa-thai.small]' <0 -20 0 0>;
+pos saraI-thai.narrow [maiEk-thai.small maiChattawa-thai.small]' <0 -20 0 0>;
+pos [saraI-thai saraI-thai.narrow saraIi-thai saraIi-thai.narrow] maiTri-thai.small' <-50 0 0 0>;
+";
+disabled = 1;
+tag = mkmk;
+},
+{
+automatic = 1;
+code = "script latn;
+language NLD;
+lookup locl_latn_0 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_0;
+";
+tag = locl;
+},
+{
+automatic = 1;
+code = "sub hyphen by hyphen.case;
+sub parenleft by parenleft.case;
+sub parenright by parenright.case;
+sub bracketleft by bracketleft.case;
+sub bracketright by bracketright.case;
+sub dieresiscomb by dieresiscomb.case;
+sub dotaccentcomb by dotaccentcomb.case;
+sub acutecomb by acutecomb.case;
+sub circumflexcomb by circumflexcomb.case;
+sub caroncomb by caroncomb.case;
+sub macroncomb by macroncomb.case;
+";
+tag = case;
+}
+);
+fontMaster = (
+{
+axesValues = (
+400
+);
+customParameters = (
+{
+name = typoAscender;
+value = 875;
+},
+{
+name = typoDescender;
+value = -190;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 875;
+},
+{
+name = hheaDescender;
+value = -190;
+},
+{
+name = winAscent;
+value = 900;
+},
+{
+name = winDescent;
+value = 250;
+}
+);
+guides = (
+{
+locked = 1;
+name = THmark.small_top;
+pos = (767,1046);
+},
+{
+locked = 1;
+pos = (699,1020);
+},
+{
+pos = (540,885);
+},
+{
+angle = 90;
+locked = 1;
+pos = (-70,402);
+},
+{
+angle = 90;
+locked = 1;
+pos = (-222,354);
+},
+{
+locked = 1;
+pos = (101,616);
+},
+{
+locked = 1;
+pos = (28,822);
+}
+);
+id = m01;
+metricValues = (
+{
+pos = 875;
+},
+{
+over = 12;
+pos = 670;
+},
+{
+over = 12;
+pos = 500;
+},
+{
+over = -12;
+},
+{
+over = -12;
+pos = -190;
+},
+{
+},
+{
+over = 12;
+pos = 536;
+},
+{
+over = -12;
+pos = -204;
+},
+{
+over = 12;
+pos = 700;
+}
+);
+name = Regular;
+stemValues = (
+66,
+73,
+99,
+106
+);
+userData = {
+GSCornerRadius = 40;
+};
+}
+);
+instances = (
+{
+axesValues = (
+400
+);
+customParameters = (
+{
+name = Filter;
+value = RemoveOverlap;
+},
+{
+name = Filter;
+value = Autohinting;
+}
+);
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+},
+{
+axesValues = (
+472
+);
+customParameters = (
+{
+name = Filter;
+value = RemoveOverlap;
+}
+);
+exports = 0;
+instanceInterpolations = {
+m01 = 1;
+};
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
+600
+);
+customParameters = (
+{
+name = Filter;
+value = RemoveOverlap;
+}
+);
+exports = 0;
+instanceInterpolations = {
+m01 = 1;
+};
+name = Bold;
+weightClass = 600;
+},
+{
+axesValues = (
+687
+);
+customParameters = (
+{
+name = Filter;
+value = RemoveOverlap;
+}
+);
+exports = 0;
+instanceInterpolations = {
+m01 = 1;
+};
+name = ExtraBold;
+weightClass = 700;
+},
+{
+axesValues = (
+800
+);
+customParameters = (
+{
+name = Filter;
+value = RemoveOverlap;
+},
+{
+name = Filter;
+value = Autohinting;
+}
+);
+exports = 0;
+instanceInterpolations = {
+m01 = 1;
+};
+name = Black;
+weightClass = 800;
+}
+);
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+filter = "NOT script == \"thai\"";
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+},
+{
+type = "italic angle";
+},
+{
+filter = "script == \"thai\"";
+name = "Bor Height";
+},
+{
+filter = "script == \"thai\"";
+type = descender;
+},
+{
+}
+);
+properties = (
+{
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright by Ratchanon Boongsrithong, 2024–2025. All rights reserved.";
+}
+);
+},
+{
+key = descriptions;
+values = (
+{
+language = dflt;
+value = "Conforma is designed by Vee Ratchanon in 2024. This version was made exclusively for Visvaldas in 2025.";
+}
+);
+},
+{
+key = designers;
+values = (
+{
+language = dflt;
+value = "Vee Ratchanon";
+}
+);
+},
+{
+key = designerURL;
+value = veeratchanon.com;
+}
+);
+stems = (
+{
+horizontal = 1;
+name = hStem0;
+},
+{
+horizontal = 1;
+name = hStem1;
+},
+{
+name = vStem0;
+},
+{
+name = vStem1;
+}
+);
+unitsPerEm = 1000;
+userData = {
+GSDimensionPlugin.Dimensions = {
+m002 = {
+nV = "174";
+oH = "102";
+oV = "186";
+};
+m003 = {
+HH = "140";
+HV = "187";
+OH = "126";
+OV = "196";
+nV = "176";
+oH = "114";
+oV = "184";
+thaiHRound = "111";
+thaiHStem = "113";
+thaiVStem = "178";
+};
+m01 = {
+HH = "82";
+HV = "100";
+OH = "80";
+OV = "102";
+nV = "96";
+nd = "66";
+oH = "74";
+oV = "98";
+tH = "68";
+thaiHBall = "55";
+thaiHRound = "74";
+thaiHStem = "74";
+thaiVBall = "60";
+thaiVStem = "92";
+};
+};
+};
+versionMajor = 1;
+versionMinor = 0;
+}

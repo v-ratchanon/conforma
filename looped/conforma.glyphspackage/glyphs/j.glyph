@@ -1,0 +1,21 @@
+{
+glyphname = j;
+kernLeft = j;
+kernRight = i;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = jdotless;
+},
+{
+pos = (-44,0);
+ref = dotaccentcomb;
+}
+);
+width = 222;
+}
+);
+unicode = 106;
+}

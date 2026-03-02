@@ -1,0 +1,19 @@
+{
+glyphname = "saraAm-thai";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "saraAa-thai";
+},
+{
+pos = (4,0);
+ref = "nikhahit-thai";
+}
+);
+width = 462;
+}
+);
+unicode = 3635;
+}

@@ -1,0 +1,42 @@
+{
+glyphname = jdotless;
+kernLeft = j;
+kernRight = u;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (111,-190);
+},
+{
+name = top;
+pos = (111,500);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(108,-190,o),
+(159,-152,o),
+(159,-62,cs),
+(159,500,l),
+(63,500,l),
+(63,-67,ls),
+(63,-99,o),
+(46,-114,o),
+(12,-114,cs),
+(-31,-114,l),
+(-31,-190,l),
+(25,-190,ls)
+);
+}
+);
+width = 222;
+}
+);
+metricRight = i;
+unicode = 567;
+}

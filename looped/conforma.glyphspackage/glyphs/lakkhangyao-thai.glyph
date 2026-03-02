@@ -1,0 +1,42 @@
+{
+glyphname = "lakkhangyao-thai";
+layers = (
+{
+background = {
+shapes = (
+{
+ref = "saraAa-thai";
+}
+);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(394,-204,l),
+(394,370,ls),
+(394,478,o),
+(325,545,o),
+(208,545,cs),
+(95,545,o),
+(13,484,o),
+(12,367,c),
+(101,367,l),
+(102,440,o),
+(144,471,o),
+(206,471,cs),
+(267,471,o),
+(302,436,o),
+(302,376,cs),
+(302,-204,l)
+);
+}
+);
+width = 462;
+}
+);
+metricLeft = "saraAa-thai";
+metricRight = "saraAa-thai";
+unicode = 3653;
+}

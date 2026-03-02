@@ -1,0 +1,19 @@
+{
+export = 0;
+glyphname = uring;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = u;
+},
+{
+ref = ringcomb;
+}
+);
+width = 537;
+}
+);
+unicode = 367;
+}

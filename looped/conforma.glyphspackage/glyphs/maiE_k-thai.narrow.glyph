@@ -1,0 +1,33 @@
+{
+glyphname = "maiEk-thai.narrow";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (-70,536);
+},
+{
+name = top;
+pos = (-70,803);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-70,617,l),
+(-70,803,l),
+(-158,803,l),
+(-158,617,l)
+);
+}
+);
+width = 200;
+}
+);
+tags = (
+mark
+);
+}

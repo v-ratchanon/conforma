@@ -10,7 +10,7 @@ tag = wght;
 classes = (
 {
 automatic = 1;
-code = "A Aacute Acircumflex Adieresis Agrave Amacron Aogonek B C Cacute Ccaron Ccedilla D Dcaron E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G H I IJ Iacute Icircumflex Idieresis Igrave Imacron Iogonek J Jacute K L Lacute Lcaron M N Nacute Ncaron O Oacute Ocircumflex Odieresis Ograve Omacron P Q R Racute Rcaron S Sacute Scaron Scedilla T Tcaron Tcedilla U Uacute Ucircumflex Udieresis Ugrave Umacron Uogonek V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
+code = "A Aacute Acircumflex Adieresis Agrave Amacron Aogonek B C Cacute Ccaron Ccedilla D Dcaron E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G H I IJ Iacute Icircumflex Idieresis Igrave Imacron Iogonek J Jacute K L Lacute Lcaron M N Nacute Ncaron O Oacute Ocircumflex Odieresis Ograve Omacron P Q R Racute Rcaron S Sacute Scaron Scedilla T Tcaron Tcedilla U Uacute Ucircumflex Udieresis Ugrave Umacron Uogonek V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent Omega";
 name = Uppercase;
 }
 );
@@ -38,6 +38,8 @@ code = "languagesystem DFLT dflt;
 
 languagesystem latn dflt;
 languagesystem latn NLD;
+
+languagesystem thai dflt;
 ";
 name = Languagesystems;
 }
@@ -46,53 +48,75 @@ features = (
 {
 automatic = 1;
 code = "feature locl;
+feature sups;
+feature frac;
+feature ordn;
 feature case;
 ";
 tag = aalt;
 },
 {
-automatic = 1;
-code = "lookup ccmp_DFLT_1 {
-	@CombiningTopAccents = [acutecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb macroncomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-} ccmp_DFLT_1;
+code = "lookup thai_decomb {
+# Decompose SaraAm
+ sub saraAm-thai by nikhahit-thai saraAa-thai;
+} thai_decomb;
 
-lookup ccmp_Other_1 {
-	lookupflag 0;
-	@Markscomb = [dieresiscomb dotaccentcomb acutecomb circumflexcomb caroncomb macroncomb];
-	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case acutecomb.case circumflexcomb.case caroncomb.case macroncomb.case];
-	sub @Markscomb @Markscomb' by @MarkscombCase;
-	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_1;
+lookup thai_ccmp_0 {
+	#2 Combine nikhahit with tone marks (regular set) 
+	sub maiEk-thai nikhahit-thai by nikhahit_maiEk-thai;
+	sub maiTho-thai nikhahit-thai by nikhahit_maiTho-thai;
+	sub maiTri-thai nikhahit-thai by nikhahit_maiTri-thai;
+	sub maiChattawa-thai nikhahit-thai by nikhahit_maiChattawa-thai;
+	sub nikhahit-thai maiEk-thai by nikhahit_maiEk-thai;
+	sub nikhahit-thai maiTho-thai by nikhahit_maiTho-thai;
+	sub nikhahit-thai maiTri-thai by nikhahit_maiTri-thai;
+	sub nikhahit-thai maiChattawa-thai by nikhahit_maiChattawa-thai;
+} thai_ccmp_0;
 
-lookup ccmp_Other_2 {
-	lookupflag 0;
-	sub @Markscomb' @MarkscombCase by @MarkscombCase;
-	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
+lookup thai_ccmp_1 {
+	# Change base glyphs when followed by below baseline marks
+	sub [yoYing-thai thoThan-thai doChada-thai toPatak-thai ru-thai lu-thai]' [saraU-thai saraUu-thai phinthu-thai] by [yoYing-thai.less thoThan-thai.less doChada-thai.short toPatak-thai.short ru-thai.short lu-thai.short];
+
+	#4 When marks are followed by tone marks, switch to small mark set
+	sub [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai maitaikhu-thai nikhahit-thai maiHanaKat-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai maitaikhu-thai.narrow nikhahit-thai.narrow maiHanaKat-thai.mid maitaikhu-thai.mid saraI-thai.mid saraIi-thai.mid saraUe-thai.mid saraUee-thai.mid] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
+
+	#5 Change certain base glyphs when followed by any marks 
+	sub [soSua-thai soSala-thai hoNokhuk-thai loChula-thai]' [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai maitaikhu-thai nikhahit-thai maiHanaKat-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai] by [soSua-thai.short soSala-thai.short hoNokhuk-thai.short loChula-thai.short];
+
+	# Change loChula when followed by above marks
+	sub [loChula-thai]' [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai  maitaikhu-thai nikhahit-thai maiHanaKat-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai] by [loChula-thai.short];
+
+	# Change normal marks to small when followed certain base glyphs
+	sub [yoYing-thai.less thoThan-thai.less doChada-thai.short toPatak-thai.short ru-thai.short lu-thai.short] [phinthu-thai saraU-thai saraUu-thai]' by [phinthu-thai.small saraU-thai.small saraUu-thai.small];
+
+	# Use small tone marks when following volwel marks
+	sub [nikhahit-thai maiChattawa-thai maiEk-thai maiHanaKat-thai thanthakhat-thai maiTho-thai maiTri-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
+
+	# Use small tone marks when following narrow marks
+	sub [nikhahit-thai.narrow saraI-thai.narrow saraIi-thai.narrow saraUe-thai.narrow saraUee-thai.narrow maiHanaKat-thai.narrow] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
+
+	# Use narrow vowels when following poPla-thai foFa-thai
+	sub [poPla-thai foFa-thai ] [maiHanaKat-thai maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit-thai]' by [maiHanaKat-thai.narrow maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow maitaikhu-thai.narrow saraI-thai.narrow saraIi-thai.narrow saraUe-thai.narrow saraUee-thai.narrow nikhahit-thai.narrow];
+
+	sub [foFan-thai] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai nikhahit-thai]' by [maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow nikhahit-thai.narrow];
+
+	# Change the set of nikhahit comnination to Narrow set
+	sub [poPla-thai foFa-thai foFan-thai] [nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai]' by [nikhahit_maiEk-thai.narrow nikhahit_maiTho-thai.narrow nikhahit_maiTri-thai.narrow nikhahit_maiChattawa-thai.narrow];
+
+	# Use narrow tone marks when both descender and ascender marks are present
+	sub [poPla-thai foFa-thai foFan-thai] [saraU-thai saraUu-thai phinthu-thai] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow];
+
+	# Use .mid to replace normal width mark for narrow set and foFan + foFa
+	sub [khoKhai-thai khoKhuat-thai roRua-thai woWaen-thai ngoNgu-thai foFan-thai] [maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai]' by [maitaikhu-thai.mid saraI-thai.mid saraIi-thai.mid saraUe-thai.mid saraUee-thai.mid]; 
+	
+	sub [roRua-thai foFan-thai] [maiHanaKat-thai]' by [maiHanaKat-thai.mid];
+
+	# Narrow tone marks followed by regular tone marks → use small tone mark
+	sub [maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
+} thai_ccmp_1;
+
 ";
 tag = ccmp;
-},
-{
-code = "pos roRua-thai [maiEk-thai nikhahit-thai maiChattawa-thai]' <-99 0 0 0>;
-pos roRua-thai maiTho-thai' <-40 0 0 0>;
-pos roRua-thai saraUu-thai' <40 0 0 0>;
-pos roRua-thai [saraU-thai saraUu-thai] [maiEk-thai maiChattawa-thai]' <-99 0 0 0>;
-pos thoThan-thai maiEk-thai' <-99 0 0 0>;
-pos thoThan-thai.less maiEk-thai' <-66 0 0 0>;
-";
-disabled = 1;
-tag = mark;
-},
-{
-code = "pos saraI-thai [maiEk-thai.small maiChattawa-thai.small]' <0 -20 0 0>;
-pos saraI-thai.narrow [maiEk-thai.small maiChattawa-thai.small]' <0 -20 0 0>;
-pos [saraI-thai saraI-thai.narrow saraIi-thai saraIi-thai.narrow] maiTri-thai.small' <-50 0 0 0>;
-";
-disabled = 1;
-tag = mkmk;
 },
 {
 automatic = 1;
@@ -104,6 +128,29 @@ lookup locl_latn_0 {
 } locl_latn_0;
 ";
 tag = locl;
+},
+{
+automatic = 1;
+code = "sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+";
+tag = sups;
+},
+{
+automatic = 1;
+code = "sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+";
+tag = frac;
+},
+{
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+";
+tag = ordn;
 },
 {
 automatic = 1;
@@ -120,6 +167,27 @@ sub caroncomb by caroncomb.case;
 sub macroncomb by macroncomb.case;
 ";
 tag = case;
+},
+{
+automatic = 1;
+code = "lookup rlig_thai_0 {
+	lookupflag IgnoreMarks;
+	sub lu-thai lakkhangyao-thai by lu_lakkhangyao-thai;
+	sub ru-thai lakkhangyao-thai by ru_lakkhangyao-thai;
+} rlig_thai_0;
+
+script thai;
+lookup rlig_thai_0;
+";
+tag = rlig;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f i by fi;
+sub f l by fl;
+";
+tag = liga;
 }
 );
 fontMaster = (
@@ -150,11 +218,11 @@ value = -190;
 },
 {
 name = winAscent;
-value = 900;
+value = 1098;
 },
 {
 name = winDescent;
-value = 250;
+value = -481;
 }
 );
 guides = (
@@ -172,8 +240,7 @@ pos = (540,885);
 },
 {
 angle = 90;
-locked = 1;
-pos = (-70,402);
+pos = (-72,402);
 },
 {
 angle = 90;
@@ -226,10 +293,8 @@ pos = 700;
 );
 name = Regular;
 stemValues = (
-66,
-73,
-99,
-106
+74,
+94
 );
 userData = {
 GSCornerRadius = 40;
@@ -245,88 +310,12 @@ customParameters = (
 {
 name = Filter;
 value = RemoveOverlap;
-},
-{
-name = Filter;
-value = Autohinting;
 }
 );
 instanceInterpolations = {
 m01 = 1;
 };
 name = Regular;
-},
-{
-axesValues = (
-472
-);
-customParameters = (
-{
-name = Filter;
-value = RemoveOverlap;
-}
-);
-exports = 0;
-instanceInterpolations = {
-m01 = 1;
-};
-name = Medium;
-weightClass = 500;
-},
-{
-axesValues = (
-600
-);
-customParameters = (
-{
-name = Filter;
-value = RemoveOverlap;
-}
-);
-exports = 0;
-instanceInterpolations = {
-m01 = 1;
-};
-name = Bold;
-weightClass = 600;
-},
-{
-axesValues = (
-687
-);
-customParameters = (
-{
-name = Filter;
-value = RemoveOverlap;
-}
-);
-exports = 0;
-instanceInterpolations = {
-m01 = 1;
-};
-name = ExtraBold;
-weightClass = 700;
-},
-{
-axesValues = (
-800
-);
-customParameters = (
-{
-name = Filter;
-value = RemoveOverlap;
-},
-{
-name = Filter;
-value = Autohinting;
-}
-);
-exports = 0;
-instanceInterpolations = {
-m01 = 1;
-};
-name = Black;
-weightClass = 800;
 }
 );
 metrics = (
@@ -396,17 +385,10 @@ value = veeratchanon.com;
 stems = (
 {
 horizontal = 1;
-name = hStem0;
-},
-{
-horizontal = 1;
 name = hStem1;
 },
 {
 name = vStem0;
-},
-{
-name = vStem1;
 }
 );
 unitsPerEm = 1000;

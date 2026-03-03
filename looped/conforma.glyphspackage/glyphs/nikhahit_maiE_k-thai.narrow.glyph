@@ -1,0 +1,14 @@
+{
+glyphname = "nikhahit_maiEk-thai.narrow";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "nikhahit_maiEk-thai";
+}
+);
+width = 200;
+}
+);
+}

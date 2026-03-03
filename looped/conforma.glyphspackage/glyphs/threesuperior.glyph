@@ -8,7 +8,7 @@ shapes = (
 ref = three;
 }
 );
-width = 533;
+width = 545;
 }
 );
 metricLeft = three;

@@ -8,7 +8,7 @@ shapes = (
 ref = two;
 }
 );
-width = 520;
+width = 532;
 }
 );
 metricLeft = two;

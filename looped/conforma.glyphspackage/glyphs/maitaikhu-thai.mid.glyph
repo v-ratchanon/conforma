@@ -1,0 +1,31 @@
+{
+glyphname = "maitaikhu-thai.mid";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (-52,536);
+},
+{
+name = top;
+pos = (-52,835);
+}
+);
+guides = (
+{
+angle = 90;
+pos = (-52,407);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (40,0);
+ref = "maitaikhu-thai";
+}
+);
+width = 200;
+}
+);
+}

@@ -9,19 +9,28 @@ pos = (146,500);
 },
 {
 name = top;
-pos = (146,686);
+pos = (146,700);
 }
 );
-layerId = m01;
+background = {
 shapes = (
 {
 closed = 1;
 nodes = (
 (134,690,l),
-(15,690,l),
-(118,558,l),
-(203,558,l)
+(21,690,l),
+(114,570,l),
+(203,570,l)
 );
+}
+);
+};
+layerId = m01;
+shapes = (
+{
+pos = (305,0);
+ref = acutecomb;
+scale = (-1,1);
 }
 );
 width = 300;

@@ -10,7 +10,7 @@ shapes = (
 ref = l;
 },
 {
-pos = (175,30);
+pos = (175,0);
 ref = caroncomb.alt;
 }
 );

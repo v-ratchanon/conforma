@@ -8,11 +8,11 @@ layers = (
 anchors = (
 {
 name = bottom;
-pos = (250,0);
+pos = (251,0);
 },
 {
 name = top;
-pos = (250,500);
+pos = (251,500);
 }
 );
 background = {
@@ -120,7 +120,7 @@ nodes = (
 {
 closed = 0;
 nodes = (
-(251,512,ls)
+(251,512,l)
 );
 }
 );

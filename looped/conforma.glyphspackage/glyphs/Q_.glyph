@@ -42,7 +42,7 @@ nodes = (
 );
 }
 );
-width = 710;
+width = 702;
 }
 );
 metricLeft = O;

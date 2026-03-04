@@ -77,11 +77,13 @@ lookup thai_ccmp_1 {
 	# Change base glyphs when followed by below baseline marks
 	sub [yoYing-thai thoThan-thai doChada-thai toPatak-thai ru-thai lu-thai]' [saraU-thai saraUu-thai phinthu-thai] by [yoYing-thai.less thoThan-thai.less doChada-thai.short toPatak-thai.short ru-thai.short lu-thai.short];
 
-	#4 When marks are followed by tone marks, switch to small mark set
+	# When marks are followed by tone marks, switch to small mark set
 	sub [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai maitaikhu-thai nikhahit-thai maiHanaKat-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai maitaikhu-thai.narrow nikhahit-thai.narrow maiHanaKat-thai.mid maitaikhu-thai.mid saraI-thai.mid saraIi-thai.mid saraUe-thai.mid saraUee-thai.mid] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
 
-	#5 Change certain base glyphs when followed by any marks 
+	# Change certain base glyphs when followed by any marks 
 	sub [soSua-thai soSala-thai hoNokhuk-thai loChula-thai]' [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai maitaikhu-thai nikhahit-thai maiHanaKat-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai] by [soSua-thai.short soSala-thai.short hoNokhuk-thai.short loChula-thai.short];
+
+	sub [soSua-thai soSala-thai hoNokhuk-thai loChula-thai]' [saraU-thai saraUu-thai] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai] by [soSua-thai.short soSala-thai.short hoNokhuk-thai.short loChula-thai.short];
 
 	# Change loChula when followed by above marks
 	sub [loChula-thai]' [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai  maitaikhu-thai nikhahit-thai maiHanaKat-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai] by [loChula-thai.short];
@@ -114,6 +116,12 @@ lookup thai_ccmp_1 {
 	# Narrow tone marks followed by regular tone marks → use small tone mark
 	sub [maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
 } thai_ccmp_1;
+
+lookup thai_ccmp_2 {
+
+	sub [maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' [saraO-thai saraAiMaimuan-thai saraAiMaimalai-thai] by [maiTho-thai.avoid maiTri-thai.avoid maiChattawa-thai.avoid thanthakhat-thai.avoid];
+
+} thai_ccmp_2;
 
 ";
 tag = ccmp;

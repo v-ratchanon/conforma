@@ -16,11 +16,11 @@ pos = (182,250);
 },
 {
 name = top;
-pos = (172,670);
+pos = (182,670);
 },
 {
 name = topright;
-pos = (198,670);
+pos = (198,726);
 }
 );
 background = {

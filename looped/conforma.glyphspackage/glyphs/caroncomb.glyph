@@ -9,17 +9,10 @@ pos = (146,500);
 },
 {
 name = top;
-pos = (146,666);
+pos = (146,700);
 }
 );
 background = {
-shapes = (
-{
-ref = acutecomb;
-}
-);
-};
-layerId = m01;
 shapes = (
 {
 closed = 1;
@@ -32,6 +25,15 @@ nodes = (
 (9,680,l),
 (97,558,l)
 );
+}
+);
+};
+layerId = m01;
+shapes = (
+{
+pos = (0,1260);
+ref = circumflexcomb;
+scale = (1,-1);
 }
 );
 width = 300;

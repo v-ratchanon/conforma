@@ -10,8 +10,8 @@ shapes = (
 ref = A;
 },
 {
-pos = (173,170);
-ref = gravecomb;
+pos = (167,0);
+ref = gravecomb.case;
 }
 );
 width = 626;

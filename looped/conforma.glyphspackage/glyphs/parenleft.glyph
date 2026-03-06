@@ -7,13 +7,15 @@ layers = (
 layerId = m01;
 shapes = (
 {
-pos = (355,0);
+pos = (275,0);
 ref = parenright;
 scale = (-1,1);
 }
 );
-width = 355;
+width = 275;
 }
 );
+metricLeft = "=|parenright";
+metricRight = "=|parenright";
 unicode = 40;
 }

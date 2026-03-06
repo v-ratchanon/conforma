@@ -1,5 +1,5 @@
 {
-glyphname = caroncomb.case;
+glyphname = gravecomb.case;
 layers = (
 {
 anchors = (
@@ -9,7 +9,7 @@ pos = (146,670);
 },
 {
 name = top;
-pos = (146,841);
+pos = (146,842);
 }
 );
 background = {
@@ -17,13 +17,10 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(193,728,l),
-(299,837,l),
-(210,837,l),
-(150,782,l),
-(90,837,l),
-(-3,837,l),
-(103,728,l)
+(191,717,l),
+(278,841,l),
+(168,841,l),
+(115,717,l)
 );
 }
 );
@@ -31,9 +28,9 @@ nodes = (
 layerId = m01;
 shapes = (
 {
-pos = (0,1558);
-ref = circumflexcomb.case;
-scale = (1,-1);
+pos = (300,0);
+ref = acutecomb.case;
+scale = (-1,1);
 }
 );
 width = 300;

@@ -7,12 +7,12 @@ layers = (
 layerId = m01;
 shapes = (
 {
-pos = (355,50);
+pos = (275,50);
 ref = parenright;
 scale = (-1,1);
 }
 );
-width = 355;
+width = 275;
 }
 );
 }

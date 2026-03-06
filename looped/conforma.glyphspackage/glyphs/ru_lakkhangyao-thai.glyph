@@ -90,10 +90,6 @@ nodes = (
 layerId = m01;
 shapes = (
 {
-locked = 1;
-ref = "ru-thai";
-},
-{
 closed = 1;
 nodes = (
 (794,-204,l),
@@ -114,6 +110,10 @@ nodes = (
 (702,376,cs),
 (702,-204,l)
 );
+},
+{
+locked = 1;
+ref = "ru-thai";
 }
 );
 width = 862;

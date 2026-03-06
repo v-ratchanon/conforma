@@ -3,7 +3,7 @@ glyphname = nbspace;
 layers = (
 {
 layerId = m01;
-width = 200;
+width = 190;
 }
 );
 metricWidth = space;

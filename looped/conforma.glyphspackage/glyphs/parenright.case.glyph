@@ -4,7 +4,7 @@ kernLeft = parenright;
 kernRight = parenright;
 layers = (
 {
-layerId = m01;
+background = {
 shapes = (
 {
 closed = 1;
@@ -30,7 +30,15 @@ nodes = (
 );
 }
 );
-width = 363;
+};
+layerId = m01;
+shapes = (
+{
+pos = (0,51);
+ref = parenright;
+}
+);
+width = 275;
 }
 );
 }

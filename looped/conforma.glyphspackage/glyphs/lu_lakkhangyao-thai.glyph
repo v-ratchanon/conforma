@@ -90,9 +90,6 @@ nodes = (
 layerId = m01;
 shapes = (
 {
-ref = "lu-thai";
-},
-{
 closed = 1;
 nodes = (
 (823,-204,l),
@@ -113,6 +110,9 @@ nodes = (
 (731,376,cs),
 (731,-204,l)
 );
+},
+{
+ref = "lu-thai";
 }
 );
 width = 891;

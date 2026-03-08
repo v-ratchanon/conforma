@@ -13,6 +13,17 @@ ref = quotedblright;
 }
 );
 width = 390;
+},
+{
+layerId = m002;
+shapes = (
+{
+angle = 180;
+pos = (390,1118);
+ref = quotedblright;
+}
+);
+width = 390;
 }
 );
 unicode = 8220;

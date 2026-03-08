@@ -201,7 +201,7 @@ tag = liga;
 fontMaster = (
 {
 axesValues = (
-400
+100
 );
 customParameters = (
 {
@@ -231,6 +231,10 @@ value = 1098;
 {
 name = winDescent;
 value = -481;
+},
+{
+name = "Master Icon Glyph Name";
+value = a;
 }
 );
 guides = (
@@ -297,9 +301,129 @@ pos = -204;
 {
 over = 12;
 pos = 700;
+},
+{
 }
 );
 name = Regular;
+stemValues = (
+74,
+94
+);
+userData = {
+GSCornerRadius = 40;
+};
+},
+{
+axesValues = (
+212
+);
+customParameters = (
+{
+name = typoAscender;
+value = 875;
+},
+{
+name = typoDescender;
+value = -190;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 875;
+},
+{
+name = hheaDescender;
+value = -190;
+},
+{
+name = winAscent;
+value = 1098;
+},
+{
+name = winDescent;
+value = -481;
+},
+{
+name = "Master Icon Glyph Name";
+value = a;
+}
+);
+guides = (
+{
+locked = 1;
+name = THmark.small_top;
+pos = (767,1046);
+},
+{
+locked = 1;
+pos = (699,1020);
+},
+{
+pos = (540,885);
+},
+{
+angle = 90;
+pos = (-72,402);
+},
+{
+angle = 90;
+locked = 1;
+pos = (-222,354);
+},
+{
+locked = 1;
+pos = (101,616);
+},
+{
+locked = 1;
+pos = (28,822);
+},
+{
+pos = (493,169);
+}
+);
+id = m002;
+metricValues = (
+{
+pos = 875;
+},
+{
+over = 14;
+pos = 670;
+},
+{
+over = 14;
+pos = 520;
+},
+{
+over = -14;
+},
+{
+over = -14;
+pos = -190;
+},
+{
+},
+{
+over = 14;
+pos = 552;
+},
+{
+over = -14;
+pos = -204;
+},
+{
+over = 12;
+pos = 700;
+},
+{
+}
+);
+name = Black;
 stemValues = (
 74,
 94
@@ -312,7 +436,7 @@ GSCornerRadius = 40;
 instances = (
 {
 axesValues = (
-400
+100
 );
 customParameters = (
 {
@@ -324,6 +448,50 @@ instanceInterpolations = {
 m01 = 1;
 };
 name = Regular;
+},
+{
+axesValues = (
+125
+);
+instanceInterpolations = {
+m002 = 0.22321;
+m01 = 0.77679;
+};
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
+145
+);
+instanceInterpolations = {
+m002 = 0.40179;
+m01 = 0.59821;
+};
+name = Bold;
+weightClass = 700;
+},
+{
+axesValues = (
+180
+);
+instanceInterpolations = {
+m002 = 0.71429;
+m01 = 0.28571;
+};
+name = ExtraBold;
+weightClass = 800;
+},
+{
+axesValues = (
+202
+);
+instanceInterpolations = {
+m002 = 0.91071;
+m01 = 0.08929;
+};
+name = Black;
+weightClass = 900;
 }
 );
 metrics = (
@@ -355,6 +523,9 @@ filter = "script == \"thai\"";
 type = descender;
 },
 {
+},
+{
+type = "x-height";
 }
 );
 properties = (
@@ -403,9 +574,16 @@ unitsPerEm = 1000;
 userData = {
 GSDimensionPlugin.Dimensions = {
 m002 = {
-nV = "174";
-oH = "102";
-oV = "186";
+HH = "178";
+HV = "222";
+OH = "182";
+OV = "228";
+nV = "218";
+nd = "175";
+oH = "164";
+oV = "220";
+thaiHBall = "85";
+thaiHStem = "160";
 };
 m003 = {
 HH = "140";

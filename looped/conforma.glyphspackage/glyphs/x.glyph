@@ -53,6 +53,57 @@ nodes = (
 }
 );
 width = 463;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (232,0);
+},
+{
+name = top;
+pos = (232,500);
+}
+);
+background = {
+shapes = (
+{
+pos = (-40,0);
+ref = n;
+}
+);
+};
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(467,0,l),
+(110,500,l),
+(2,500,l),
+(359,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(99,0,l),
+(240,195,l),
+(185,256,l),
+(-4,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(460,500,l),
+(362,500,l),
+(223,303,l),
+(276,244,l)
+);
+}
+);
+width = 463;
 }
 );
 unicode = 120;

@@ -10,11 +10,24 @@ shapes = (
 ref = a;
 },
 {
-pos = (225,0);
+pos = (221,0);
 ref = ogonekcomb;
 }
 );
-width = 518;
+width = 514;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = a;
+},
+{
+pos = (248,0);
+ref = ogonekcomb;
+}
+);
+width = 581;
 }
 );
 unicode = 261;

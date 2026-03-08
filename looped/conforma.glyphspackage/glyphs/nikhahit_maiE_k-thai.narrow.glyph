@@ -9,6 +9,15 @@ ref = "nikhahit_maiEk-thai";
 }
 );
 width = 200;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "nikhahit_maiEk-thai";
+}
+);
+width = 200;
 }
 );
 }

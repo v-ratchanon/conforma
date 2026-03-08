@@ -36,6 +36,39 @@ nodes = (
 }
 );
 width = 250;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (126,0);
+},
+{
+name = ogonek;
+pos = (177,0);
+},
+{
+name = top;
+pos = (126,670);
+},
+{
+name = topleft;
+pos = (75,670);
+}
+);
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(175,0,l),
+(175,670,l),
+(75,670,l),
+(75,0,l)
+);
+}
+);
+width = 250;
 }
 );
 metricLeft = H;

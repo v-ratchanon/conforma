@@ -26,6 +26,32 @@ ref = "maiHanaKat-thai";
 }
 );
 width = 200;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (-52,536);
+},
+{
+name = top;
+pos = (-114,803);
+}
+);
+guides = (
+{
+angle = 90;
+pos = (-52,407);
+}
+);
+layerId = m002;
+shapes = (
+{
+pos = (-18,0);
+ref = "maiHanaKat-thai";
+}
+);
+width = 200;
 }
 );
 }

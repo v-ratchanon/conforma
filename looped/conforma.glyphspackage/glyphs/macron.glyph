@@ -9,6 +9,15 @@ ref = macroncomb;
 }
 );
 width = 300;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = macroncomb;
+}
+);
+width = 300;
 }
 );
 unicode = 175;

@@ -13,6 +13,18 @@ ref = ringcomb;
 }
 );
 width = 537;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = u;
+},
+{
+ref = ringcomb;
+}
+);
+width = 589;
 }
 );
 unicode = 367;

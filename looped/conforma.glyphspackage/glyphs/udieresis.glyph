@@ -15,6 +15,19 @@ ref = dieresiscomb;
 }
 );
 width = 537;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = u;
+},
+{
+pos = (140,20);
+ref = dieresiscomb;
+}
+);
+width = 589;
 }
 );
 unicode = 252;

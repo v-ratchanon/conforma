@@ -37,6 +37,43 @@ scale = (1,-1);
 }
 );
 width = 300;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (146,670);
+},
+{
+name = top;
+pos = (146,841);
+}
+);
+background = {
+shapes = (
+{
+closed = 1;
+nodes = (
+(193,728,l),
+(299,837,l),
+(210,837,l),
+(150,782,l),
+(90,837,l),
+(-3,837,l),
+(103,728,l)
+);
+}
+);
+};
+layerId = m002;
+shapes = (
+{
+pos = (0,1558);
+ref = circumflexcomb.case;
+scale = (1,-1);
+}
+);
+width = 300;
 }
 );
 }

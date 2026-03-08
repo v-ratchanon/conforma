@@ -31,6 +31,35 @@ nodes = (
 }
 );
 width = 222;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (139,0);
+},
+{
+name = ogonek;
+pos = (187,0);
+},
+{
+name = top;
+pos = (139,520);
+}
+);
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(248,0,l),
+(248,520,l),
+(30,520,l),
+(30,0,l)
+);
+}
+);
+width = 278;
 }
 );
 unicode = 305;

@@ -15,6 +15,19 @@ ref = J;
 }
 );
 width = 766;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = I;
+},
+{
+pos = (250,0);
+ref = J;
+}
+);
+width = 766;
 }
 );
 unicode = 306;

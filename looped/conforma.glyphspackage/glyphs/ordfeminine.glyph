@@ -8,7 +8,16 @@ shapes = (
 ref = a;
 }
 );
-width = 518;
+width = 514;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = a;
+}
+);
+width = 581;
 }
 );
 unicode = 170;

@@ -43,6 +43,47 @@ ref = O;
 }
 );
 width = 702;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (346,0);
+},
+{
+name = top;
+pos = (346,670);
+}
+);
+background = {
+shapes = (
+{
+closed = 1;
+nodes = (
+(598,-64,l),
+(529,49,l),
+(419,49,l),
+(488,-64,l)
+);
+}
+);
+};
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(615,-85,l),
+(523,63,l),
+(430,37,l),
+(505,-85,l)
+);
+},
+{
+ref = O;
+}
+);
+width = 702;
 }
 );
 metricLeft = O;

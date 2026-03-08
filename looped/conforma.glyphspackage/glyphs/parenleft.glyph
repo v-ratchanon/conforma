@@ -13,6 +13,17 @@ scale = (-1,1);
 }
 );
 width = 275;
+},
+{
+layerId = m002;
+shapes = (
+{
+pos = (275,0);
+ref = parenright;
+scale = (-1,1);
+}
+);
+width = 275;
 }
 );
 metricLeft = "=|parenright";

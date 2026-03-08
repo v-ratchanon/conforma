@@ -22,6 +22,25 @@ ref = dotaccentcomb;
 }
 );
 width = 222;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (111,0);
+}
+);
+layerId = m002;
+shapes = (
+{
+ref = idotless;
+},
+{
+pos = (-16,0);
+ref = dotaccentcomb;
+}
+);
+width = 278;
 }
 );
 unicode = 105;

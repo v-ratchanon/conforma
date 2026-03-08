@@ -13,6 +13,19 @@ ref = "nikhahit-thai";
 }
 );
 width = 474;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "saraAa-thai";
+},
+{
+pos = (4,0);
+ref = "nikhahit-thai";
+}
+);
+width = 474;
 }
 );
 unicode = 3635;

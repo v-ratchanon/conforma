@@ -54,6 +54,57 @@ nodes = (
 }
 );
 width = 681;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (381,0);
+},
+{
+name = center;
+pos = (381,503);
+},
+{
+name = top;
+pos = (381,670);
+},
+{
+name = topleft;
+pos = (66,670);
+}
+);
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(668,0,l),
+(668,670,l),
+(446,670,l),
+(446,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(255,0,l),
+(255,670,l),
+(33,670,l),
+(33,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(616,244,l),
+(616,422,l),
+(174,422,l),
+(174,244,l)
+);
+}
+);
+width = 701;
 }
 );
 unicode = 72;

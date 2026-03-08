@@ -9,6 +9,15 @@ ref = tildecomb;
 }
 );
 width = 300;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = tildecomb;
+}
+);
+width = 300;
 }
 );
 unicode = 732;

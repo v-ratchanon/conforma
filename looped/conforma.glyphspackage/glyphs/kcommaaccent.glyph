@@ -13,6 +13,18 @@ ref = commaaccentcomb;
 }
 );
 width = 500;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = k;
+},
+{
+ref = commaaccentcomb;
+}
+);
+width = 500;
 }
 );
 unicode = 311;

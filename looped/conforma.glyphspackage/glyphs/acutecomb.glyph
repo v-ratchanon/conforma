@@ -25,6 +25,31 @@ nodes = (
 }
 );
 width = 300;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (146,500);
+},
+{
+name = top;
+pos = (146,696);
+}
+);
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(185,560,l),
+(288,700,l),
+(175,700,l),
+(106,560,l)
+);
+}
+);
+width = 300;
 }
 );
 unicode = 769;

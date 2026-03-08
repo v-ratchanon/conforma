@@ -34,6 +34,40 @@ scale = (-1,1);
 }
 );
 width = 300;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (146,500);
+},
+{
+name = top;
+pos = (146,700);
+}
+);
+background = {
+shapes = (
+{
+closed = 1;
+nodes = (
+(134,690,l),
+(21,690,l),
+(114,570,l),
+(203,570,l)
+);
+}
+);
+};
+layerId = m002;
+shapes = (
+{
+pos = (305,0);
+ref = acutecomb;
+scale = (-1,1);
+}
+);
+width = 300;
 }
 );
 unicode = 768;

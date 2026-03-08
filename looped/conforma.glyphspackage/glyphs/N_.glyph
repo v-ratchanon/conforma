@@ -44,6 +44,47 @@ nodes = (
 }
 );
 width = 701;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (347,0);
+},
+{
+name = top;
+pos = (347,670);
+}
+);
+background = {
+shapes = (
+{
+pos = (15,0);
+ref = H;
+}
+);
+};
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(165,0,l),
+(165,634,l),
+(117,634,l),
+(501,0,l),
+(626,0,l),
+(626,670,l),
+(534,670,l),
+(534,36,l),
+(582,36,l),
+(198,670,l),
+(75,670,l),
+(75,0,l)
+);
+}
+);
+width = 701;
 }
 );
 metricLeft = H;

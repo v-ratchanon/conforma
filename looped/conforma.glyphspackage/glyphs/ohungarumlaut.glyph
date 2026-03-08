@@ -13,6 +13,18 @@ ref = hungarumlautcomb;
 }
 );
 width = 540;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = o;
+},
+{
+ref = hungarumlautcomb;
+}
+);
+width = 586;
 }
 );
 unicode = 337;

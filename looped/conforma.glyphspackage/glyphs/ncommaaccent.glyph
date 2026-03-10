@@ -24,7 +24,7 @@ ref = n;
 ref = commaaccentcomb;
 }
 );
-width = 595;
+width = 601;
 }
 );
 unicode = 326;

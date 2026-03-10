@@ -23,11 +23,11 @@ shapes = (
 ref = n;
 },
 {
-pos = (152,20);
+pos = (155,20);
 ref = acutecomb;
 }
 );
-width = 595;
+width = 601;
 }
 );
 unicode = 324;

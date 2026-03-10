@@ -12,7 +12,7 @@ ref = g;
 ref = commaturnedabovecomb;
 }
 );
-width = 552;
+width = 563;
 },
 {
 layerId = m002;
@@ -24,7 +24,7 @@ ref = g;
 ref = commaturnedabovecomb;
 }
 );
-width = 552;
+width = 614;
 }
 );
 unicode = 291;

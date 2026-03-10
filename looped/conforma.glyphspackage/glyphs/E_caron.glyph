@@ -23,11 +23,11 @@ shapes = (
 ref = E;
 },
 {
-pos = (150,0);
+pos = (154,0);
 ref = caroncomb.case;
 }
 );
-width = 569;
+width = 570;
 }
 );
 unicode = 282;

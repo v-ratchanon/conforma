@@ -8,11 +8,11 @@ shapes = (
 ref = f;
 },
 {
-pos = (331,0);
+pos = (328,0);
 ref = i;
 }
 );
-width = 553;
+width = 550;
 },
 {
 layerId = m002;
@@ -21,11 +21,11 @@ shapes = (
 ref = f;
 },
 {
-pos = (408,0);
+pos = (400,0);
 ref = i;
 }
 );
-width = 686;
+width = 678;
 }
 );
 metricLeft = f;

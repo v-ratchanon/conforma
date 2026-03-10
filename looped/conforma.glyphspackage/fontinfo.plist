@@ -26,7 +26,7 @@ value = 1;
 },
 {
 name = "EditView Line Height";
-value = 1400;
+value = 1000;
 }
 );
 date = "2024-09-07 11:22:52 +0000";
@@ -248,13 +248,6 @@ locked = 1;
 pos = (699,1020);
 },
 {
-pos = (540,885);
-},
-{
-angle = 90;
-pos = (-72,402);
-},
-{
 angle = 90;
 locked = 1;
 pos = (-222,354);
@@ -451,44 +444,43 @@ name = Regular;
 },
 {
 axesValues = (
-125
+124
 );
 instanceInterpolations = {
-m002 = 0.22321;
-m01 = 0.77679;
+m002 = 0.21429;
+m01 = 0.78571;
 };
 name = Medium;
 weightClass = 500;
 },
 {
 axesValues = (
-145
+152
 );
 instanceInterpolations = {
-m002 = 0.40179;
-m01 = 0.59821;
+m002 = 0.46429;
+m01 = 0.53571;
 };
 name = Bold;
 weightClass = 700;
 },
 {
 axesValues = (
-180
+184
 );
 instanceInterpolations = {
-m002 = 0.71429;
-m01 = 0.28571;
+m002 = 0.75;
+m01 = 0.25;
 };
 name = ExtraBold;
 weightClass = 800;
 },
 {
 axesValues = (
-202
+212
 );
 instanceInterpolations = {
-m002 = 0.91071;
-m01 = 0.08929;
+m002 = 1;
 };
 name = Black;
 weightClass = 900;

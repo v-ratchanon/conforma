@@ -40,19 +40,19 @@ width = 230;
 anchors = (
 {
 name = bottom;
-pos = (139,0);
+pos = (142,0);
 },
 {
 name = center;
-pos = (139,260);
+pos = (142,260);
 },
 {
 name = top;
-pos = (139,875);
+pos = (142,875);
 },
 {
 name = topright;
-pos = (248,875);
+pos = (251,875);
 }
 );
 layerId = m002;
@@ -60,14 +60,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(248,0,l),
-(248,700,l),
-(30,700,l),
-(30,0,l)
+(251,0,l),
+(251,700,l),
+(33,700,l),
+(33,0,l)
 );
 }
 );
-width = 278;
+width = 284;
 }
 );
 unicode = 108;

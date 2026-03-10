@@ -24,7 +24,7 @@ ref = u;
 ref = ringcomb;
 }
 );
-width = 589;
+width = 595;
 }
 );
 unicode = 367;

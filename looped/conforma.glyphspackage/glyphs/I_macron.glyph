@@ -23,11 +23,11 @@ shapes = (
 ref = I;
 },
 {
-pos = (-53,170);
+pos = (-50,170);
 ref = macroncomb;
 }
 );
-width = 296;
+width = 302;
 }
 );
 unicode = 298;

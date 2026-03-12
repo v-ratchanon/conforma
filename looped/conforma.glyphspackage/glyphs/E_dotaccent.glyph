@@ -23,11 +23,11 @@ shapes = (
 ref = E;
 },
 {
-pos = (145,0);
+pos = (148,0);
 ref = dotaccentcomb.case;
 }
 );
-width = 570;
+width = 578;
 }
 );
 unicode = 278;

@@ -74,27 +74,27 @@ width = 702;
 anchors = (
 {
 name = bottom;
-pos = (352,0);
+pos = (362,0);
 },
 {
 name = center;
-pos = (352,335);
+pos = (362,335);
 },
 {
 name = ogonek;
-pos = (623,10);
+pos = (652,10);
 },
 {
 name = top;
-pos = (352,670);
+pos = (362,670);
 },
 {
 name = topleft;
-pos = (33,670);
+pos = (20,670);
 },
 {
 name = topright;
-pos = (671,670);
+pos = (704,670);
 }
 );
 background = {
